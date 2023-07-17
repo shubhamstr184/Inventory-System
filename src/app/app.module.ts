@@ -7,13 +7,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './body/header/header.component';
 import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './body/footer/footer.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SellerAuthComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-<nav class="nav">
+<!-- <nav class="nav">
 <h1>E-com</h1>
 <div class="nav-search">
     <input type="text" placeholder="Search">
@@ -11,4 +11,69 @@
     <li><a routerLink="/login-page">Login</a></li>
 
 </ul>
-</nav>
+</nav> -->
+<div class="header">
+  <a routerLink="" class="logo">
+      <img src="https://csii.in/images/logo/logo.png" alt="..." height="40"></a>
+
+      
+  <div class="header-right" >
+      
+  
+
+        <tr>
+          <td>
+            
+            <div class="input-group">
+              <div >
+                <input type="search" id="form1" class="form-control"placeholder="Search"/>
+              </div>
+            </div>
+          </td>
+            <td>
+
+              <button type="button" class="button-5">search
+              </button>
+              
+            </td>
+          <td>
+            
+              <button class="button-5" routerLink="">Home</button>
+
+          </td>
+          <td>
+            
+            <button class="button-5" routerLink="/login-page">login</button>
+
+        </td>
+        <td>
+            
+          <button class="button-5" routerLink="">Cart(0)</button>
+
+      </td>
+          <td>
+            <ng-template #content let-offcanvas>
+              <div class="offcanvas-header">
+                <h4 >Master Setup</h4>
+              </div>
+              <div class="offcanvas-body">
+                
+                <button  class="button-5 form-control" routerLink="/seller-auth">Seller</button>&nbsp;
+                <button  class="button-5 form-control" routerLink="/products"> products</button>&nbsp;
+                <button  class="button-5 form-control" routerLink="listing">catogries</button>&nbsp;
+                <button  class="button-5 form-control" routerLink="invoice-listing"></button>&nbsp;
+              </div>
+            </ng-template>
+            
+            <button class="button-5" (click)="open(content)">bars</button>
+
+
+          </td>
+        </tr>
+
+
+    
+  </div>
+</div>
+
+<router-outlet></router-outlet>
